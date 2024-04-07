@@ -7,9 +7,8 @@ public class Main {
         findLcm(a, b);
     }
     private static void findLcm(int n, int m){
-        int lcm = 1;
         List<Integer> cd = new ArrayList<Integer>();
-        for(int i = 1; i <= Math.min(n, m)/2; i++){
+        for(int i = Math.min(n,m); i > 0; i--){
             if(n%i==0 && m%i==0){
                 cd.add(i);
                 n = n/i;
@@ -17,11 +16,10 @@ public class Main {
             }
         }
 
+        int lcm = n * m;
         for(int i =0; i < cd.size(); i++){
             lcm *= cd.get(i);
         }
-        lcm *= n;
-        lcm *= m;
 
         System.out.println(lcm);
     }
