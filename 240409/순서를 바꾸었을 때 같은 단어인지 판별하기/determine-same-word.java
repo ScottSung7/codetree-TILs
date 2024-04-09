@@ -8,12 +8,12 @@ public class Main {
 
         char[] arr1 = word1.toCharArray();
         Arrays.sort(arr1);
-        char[] arr2 = word1.toCharArray();
+        char[] arr2 = word2.toCharArray();
         Arrays.sort(arr2);
 
         String newWord1 = new String(arr1);
         String newWord2 = new String(arr2);
-
+        
         System.out.println(
             newWord1.equals(newWord2) ? "Yes" : "No"
         );
