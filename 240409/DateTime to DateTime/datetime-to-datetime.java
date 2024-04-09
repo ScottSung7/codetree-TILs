@@ -13,7 +13,7 @@ public class Main {
         while(true){
             if(c < 11 || b < 11 || a < 11){
                 if((b <= 11) && (a <= 11)){
-                    System.out.println(-1);
+                    minPast = -1;
                     break;
                 }
                 
