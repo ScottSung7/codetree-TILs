@@ -14,17 +14,15 @@ public class Main {
         int day = b;
         int daysPast = 1;
         while(true){
-            
-            day++;
-            daysPast++;
-            
             if(mth == c && day == d){
                 break;
             }
-
-            if(day==days[mth]){
+            day++;
+            daysPast++;
+            
+            if(day > days[mth]){
                 mth++;
-                day=0;
+                day=1;
             }
             
         }
