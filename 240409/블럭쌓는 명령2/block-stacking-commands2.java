@@ -5,7 +5,7 @@ public class Main {
         int size = sc.nextInt();
         int length = sc.nextInt();
         int[] arr = new int[size];
-        for(int i = 0; i < length; i++){
+        for(int i = 0; i < size; i++){
             arr[i] = 0;
         }
 
