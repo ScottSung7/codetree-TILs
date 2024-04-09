@@ -17,13 +17,16 @@ public class Main {
             
             day++;
             daysPast++;
+            
+            if(mth == c && day == d){
+                break;
+            }
+
             if(day==days[mth]){
                 mth++;
                 day=0;
             }
-            if(mth == c && day == d){
-                break;
-            }
+            
         }
         System.out.println(daysPast);
 
