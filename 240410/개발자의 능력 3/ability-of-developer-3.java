@@ -15,8 +15,8 @@ public class Main {
         int min = Integer.MAX_VALUE;
         for(int i = 0; i <= n-k; i++)
             for(int j = i+1; j <= n-(k-1); j++)
-                for(int h = j+1; h<=n; h++){
-                    int sum1 = arr[i] + arr[j] + arr[k];
+                for(int h = j+1; h < n; h++){
+                    int sum1 = arr[i] + arr[j] + arr[h];
                     int sum2 = allSum - sum1;
                     int dif = Math.abs(sum1 - sum2);
                     min = Math.min(min, dif);
