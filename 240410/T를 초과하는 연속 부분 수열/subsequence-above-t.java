@@ -10,7 +10,7 @@ public class Main {
         int numBefore = -1;
         for(int i = 0; i < length; i++){
             int a = sc.nextInt();
-            if(numBefore > 0 && a > target && a > numBefore){
+            if(numBefore > 0 && a > target && a >= numBefore){
                 cnt++;
             }else if(a > target){
                 cnt = 1;
