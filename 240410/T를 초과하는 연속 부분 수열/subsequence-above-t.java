@@ -12,6 +12,8 @@ public class Main {
             int a = sc.nextInt();
             if(numBefore > 0 && a > target && a > numBefore){
                 cnt++;
+            }else if(a > target){
+                cnt = 1;
             }else{
                 cnt = 0;
             }
