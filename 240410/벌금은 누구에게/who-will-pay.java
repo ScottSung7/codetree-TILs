@@ -10,6 +10,7 @@ public class Main {
         for(int i = 1; i <= studentSize; i ++){
             violations[i] = 0;
         }
+
         int student = 0;
         for(int i =0; i < length; i++){
             int num = sc.nextInt();
@@ -20,7 +21,7 @@ public class Main {
             }
         }
 
-        System.out.println(student);
+        System.out.println(student == 0 ? -1 : student);
 
 
     }
