@@ -12,16 +12,10 @@ public class Main {
         int minArea = Integer.MAX_VALUE;
         // Math.abs(endy-starty)
         for(int i = 0; i < length; i++){
-            int startx=0, endx=0, starty=0, endy = 0;
+            int startx= 40001, endx= 0, starty= 40001, endy = 0;
             for(int j = 0; j < length; j++){
                 if(i == j)
                     continue;
-                if(j == 0){
-                    startx = positions[j][0];
-                    endx = positions[j][0];
-                    starty = positions[j][1];
-                    endy = positions[j][1];
-                }
                 startx = Math.min(startx, positions[j][0]);
                 endx = Math.max(endx, positions[j][0]);
                 starty = Math.min(starty, positions[j][1]);
