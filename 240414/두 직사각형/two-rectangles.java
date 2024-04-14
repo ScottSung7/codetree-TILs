@@ -13,13 +13,13 @@ public class Main {
         int b2 = sc.nextInt();
 
         if(x2 < a1){
-            System.out.println("nonoverlappint");
+            System.out.println("nonoverlapping");
         }else if(a2 < x1){
-            System.out.println("nonoverlappint");    
+            System.out.println("nonoverlapping");    
         }else if(y2 < b1){
-            System.out.println("nonoverlappint");
+            System.out.println("nonoverlapping");
         }else if(b2 < y1){
-            System.out.println("nonoverlappint");
+            System.out.println("nonoverlapping");
         }else{
             System.out.println("overlapping");
         }
