@@ -12,7 +12,7 @@ public class Main {
 
         if(arr[0] + 1 == arr[1] && arr[1] + 1 == arr[2])
             result = 0;
-        else if(a[0] + 2 == a[1] || a[1] + 2 == a[2])
+        else if(arr[0] + 2 == arr[1] || arr[1] + 2 == arr[2])
             result = 1;
         
         System.out.println(result);
