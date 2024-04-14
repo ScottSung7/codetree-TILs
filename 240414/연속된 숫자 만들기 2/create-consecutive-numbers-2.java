@@ -6,21 +6,16 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
         int result = 2;
-        if(a + 1 == b && b + 1 == c){
-            result = 0;
-        }
-        int[] arr = new int[] {a, b, c};
-        for(int i =0; i < 3; i++){
-            int toCompare = arr[i]+1;
-            for(int j = 0; j < 3; j++){
-                if(toCompare == arr[j]){
-                    result = 1;
-                    break;
-                }
-            }
-        }        
-        System.out.println(result);
 
+        int[] arr = new int[] {a, b, c};
+        Arrays.sort(arr);
+
+        if(arr[0] + 1 == arr[1] && arr[1] + 1 == arr[2])
+            result = 0;
+        else if(a[0] + 2 == a[1] || a[1] + 2 == a[2])
+            result = 1;
+        
+        System.out.println(result);
 
     }
 }
