@@ -17,6 +17,8 @@ public class Main {
                 System.out.println(s.isEmpty() ? 1 : 0);
             }else if(command.equals("pop")){
                 System.out.println(s.pop());
+            }else if(command.equals("top")){
+                System.out.println(s.peek());
             }
 
 
