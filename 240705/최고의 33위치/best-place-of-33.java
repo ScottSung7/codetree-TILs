@@ -3,6 +3,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         int[][] grid = getgrid();
+        
         int max = findMax(grid);
         System.out.println(max);
         
@@ -41,6 +42,7 @@ public class Main {
                 xstart++;
             }else if(yend < grid.length){
                 ystart++;
+                xstart = 0;
             }
 
         }
