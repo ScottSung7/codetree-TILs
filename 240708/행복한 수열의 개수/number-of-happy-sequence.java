@@ -24,14 +24,23 @@ public class Main {
         int numBefore;
         for(int i = 0; i < grid.length; i++){
             dupCnt = 1;
-            int num = -1;
             numBefore = -1;
+            int num = -1;
             for(int j = 0; j< grid.length; j++){
                 num = grid[i][j];
-                if(num == numBefore) dupCnt++;
+                if(num == numBefore) {
+                    dupCnt++; 
+                }
+                else if(num != numBefore) {
+                     dupCnt = 1;
+                 }
+
+                 if(dupCnt >= happy) {
+                        happyCnt++;
+                        break;
+                    }
                 numBefore = num;
             }
-            if(dupCnt >= happy) happyCnt++;
             
         }
          
@@ -41,10 +50,19 @@ public class Main {
             int num = -1;
             for(int i = 0; i< grid.length; i++){
                 num = grid[i][j];
-                if(num == numBefore) dupCnt++;
+                if(num == numBefore) {
+                    dupCnt++; 
+                }else if(num != numBefore) {
+                    dupCnt = 1;
+                }
+
+                if(dupCnt >= happy) {
+                        happyCnt++;
+                        break;
+                }
                 numBefore = num;
             }
-            if(dupCnt >= happy) happyCnt++;
+            
             
         }
         
