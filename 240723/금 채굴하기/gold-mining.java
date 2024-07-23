@@ -21,14 +21,14 @@ public class Main {
         System.out.println(maxGold);
     }
     private static int collectGold(int row, int col, int k, int size, int[][] grid){
-        
-        if(k == 0){
-            return grid[row][col];
-        }
+       
         int[] dirX = {1, 1, -1, -1};
         int[] dirY = {-1, 1, 1, -1};
         
         int goldNow = 0;
+
+        goldNow += grid[row][col]; 
+
         for(int curK = 1; curK <= k; curK++){
             int curX = row - curK;
             int curY = col;
