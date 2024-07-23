@@ -7,6 +7,11 @@ public class Main {
         int[][] grid = createGrid(sc, size); //그리드 생성
 
         int maxGold = 0;
+
+        if(size == 1){
+            maxGold = grid[0][0];
+        }
+
         for(int row = 0; row < size; row++){
             for(int col = 0; col < size; col++){
                 int numOfGold = 0;
