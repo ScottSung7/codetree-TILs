@@ -6,6 +6,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);    n = sc.nextInt();       m = sc.nextInt();   grid = getGrid(sc);
         
+        if(m == 1) grid = new int[0];
+
         while(true){
             numChanged = false;
             findNum();
@@ -37,7 +39,7 @@ public class Main {
     private static boolean numChanged;
     private static void check(){
         cnt = 1;    temp = 0;    num = 0;   start = -1;
-        
+
         for(int i = 1; i < grid.length; i++){
                 temp = grid[i-1];
                 if(temp!=0 && temp == grid[i]){
