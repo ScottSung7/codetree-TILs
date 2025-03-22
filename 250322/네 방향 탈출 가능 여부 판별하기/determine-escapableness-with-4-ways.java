@@ -13,9 +13,9 @@ public class Main {
         m = Integer.parseInt(st.nextToken());
         grid = new int[n][m];
         visited = new boolean[n][m];
-        for(int i = 0; i < m; i++){
+        for(int i = 0; i < n; i++){
             StringTokenizer stg = new StringTokenizer(br.readLine());
-            for(int j = 0; j < n; j++){
+            for(int j = 0; j < m; j++){
                 grid[i][j] = Integer.parseInt(stg.nextToken());
                 visited[i][j] = false;
             }
